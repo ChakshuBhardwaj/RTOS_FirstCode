@@ -91,7 +91,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-Is_Created =  xTaskCreate(Task1_Handler,"Task-1",200,"Hello World from Task-1",2,&Task1_handle);
+Is_Created =  xTaskCreate(Task1_Handler,"Task-11",200,"Hello World from Task-1",2,&Task1_handle);
 configASSERT(Is_Created == pdPASS);
 Is_Created =  xTaskCreate(Task2_Handler,"Task-2",200,"Hello World from Task-2",2,&Task2_handle);
 configASSERT(Is_Created == pdPASS);
